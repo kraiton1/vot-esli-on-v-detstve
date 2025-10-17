@@ -60,7 +60,7 @@
     "robotsSwitcher": true,
     "robotsText": "User-agent: *\nDisallow: /cgi-bin\n",
     "favicon": "@PROJECT_PATH@/assets/images/56-128x61.png",
-    "mbrsiteDomain": "mdbvbsun7j",
+    "mbrsiteDomain": "ycwjnz461w",
     "sitemapSwitcher": false,
     "sitemapSwitcherAuto": "on",
     "siteUrl": false,
@@ -70,7 +70,7 @@
     "language": "ru",
     "publishChangesOnly": true,
     "global_after_body": "<style>\n  /* Общий стиль для всей области текста с тенью */\n  .text-with-shadow {\n    text-shadow: 1px 3px #000;\n  }\n</style><div class=\"text-with-shadow\">",
-    "google-analytics": "<script async=\"async\" src=\"https://w.uptolike.com/widgets/v1/zp.js?pid=2047096\" type=\"text/javascript\"></script>\n\n<meta name=\"google-site-verification\" content=\"ZcnwphrVGazPd3zX61eH_nj0-xxFA164rpSyRfR5MdI\" />\n\n <!-- Yandex.Metrika counter --> <script type=\"text/javascript\">     (function(m,e,t,r,i,k,a){         m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};         m[i].l=1*new Date();         for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}         k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)     })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=104677253', 'ym');      ym(104677253, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:\"dataLayer\", accurateTrackBounce:true, trackLinks:true}); </script> <noscript><div><img src=\"https://mc.yandex.ru/watch/104677253\" style=\"position:absolute; left:-9999px;\" alt=\"\" /></div></noscript> <!-- /Yandex.Metrika counter -->   ",
+    "google-analytics": "<script async=\"async\" src=\"https://w.uptolike.com/widgets/v1/zp.js?pid=2047096\" type=\"text/javascript\"></script>\n\n <!-- Yandex.Metrika counter --> <script type=\"text/javascript\">     (function(m,e,t,r,i,k,a){         m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};         m[i].l=1*new Date();         for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}         k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)     })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=104677253', 'ym');      ym(104677253, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:\"dataLayer\", accurateTrackBounce:true, trackLinks:true}); </script> <noscript><div><img src=\"https://mc.yandex.ru/watch/104677253\" style=\"position:absolute; left:-9999px;\" alt=\"\" /></div></noscript> <!-- /Yandex.Metrika counter -->   ",
     "global_footer_custom": "<script>\ndocument.oncontextmenu = cmenu; function cmenu() { return false; }\n</script>\n<script>\nfunction preventSelection(element){\n  var preventSelection = false;\n  function addHandler(element, event, handler){\n  if (element.attachEvent) element.attachEvent('on' + event, handler);\n  else if (element.addEventListener) element.addEventListener(event, handler, false);  }\n  function removeSelection(){\n  if (window.getSelection) { window.getSelection().removeAllRanges(); }\n  else if (document.selection && document.selection.clear)\n  document.selection.clear();\n  }\n  addHandler(element, 'mousemove', function(){ if(preventSelection) removeSelection(); });\n  addHandler(element, 'mousedown', function(event){ var event = event || window.event; var sender = event.target || event.srcElement; preventSelection = !sender.tagName.match(/INPUT|TEXTAREA/i) ;});\n  function killCtrlA(event){\n  var event = event || window.event;\n  var sender = event.target || event.srcElement;\n  if (sender.tagName.match(/INPUT|TEXTAREA/i)) return;\n  var key = event.keyCode || event.which;\n  if ((event.ctrlKey && key == 'U'.charCodeAt(0)) || (event.ctrlKey && key == 'A'.charCodeAt(0)) || (event.ctrlKey && key == 'S'.charCodeAt(0)))  // 'A'.charCodeAt(0) можно заменить на 65\n  { removeSelection();\n  if (event.preventDefault) event.preventDefault();\n  else event.returnValue = false;}}\n  addHandler(element, 'keydown', killCtrlA);\n  addHandler(element, 'keyup', killCtrlA);\n}\npreventSelection(document);\n</script>",
     "global_header_custom": "",
     "global_before_html": ""
@@ -83,7 +83,7 @@
         "meta_descr": "",
         "header_custom": "<head>\n  <style>\n    img {\n      transition: transform 1.5s ease;\n    }\n\n    img:hover {\n      transform: scale(1.4);\n    }\n  </style>\n</head>",
         "footer_custom": "<style>\n  /* Общий стиль для всей области текста с тенью */\n  .text-with-shadow {\n    text-shadow: 1px 1px 3px #000000;\n  }\n</style><div class=\"text-with-shadow\">",
-        "html_before": ""
+        "html_before": "<meta name=\"google-site-verification\" content=\"ZcnwphrVGazPd3zX61eH_nj0-xxFA164rpSyRfR5MdI\" />"
       },
       "components": [
         {
