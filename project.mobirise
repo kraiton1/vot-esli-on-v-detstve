@@ -1,0 +1,353 @@
+{
+  "settings": {
+    "name": "Вот если он в детстве..",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "mobirise5",
+      "title": "Mobirise 5",
+      "styling": {
+        "primaryColor": "#6592e6",
+        "secondaryColor": "#ff0000",
+        "successColor": "#40b0bf",
+        "infoColor": "#47b5ed",
+        "warningColor": "#FFE161",
+        "dangerColor": "#ff9966",
+        "mainFont": "Jost",
+        "display1Font": "Jost",
+        "display1Size": 4.6,
+        "display2Font": "Jost",
+        "display2Size": 3,
+        "display5Font": "Noto Serif JP",
+        "display5Size": "2.2",
+        "display7Font": "Noto Serif JP",
+        "display7Size": "2",
+        "display4Font": "Jost",
+        "display4Size": 1.1,
+        "isRoundedButtons": false,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": [
+        "#ff0000",
+        "#02acff",
+        "#aebbad",
+        "#ffc961",
+        "#d50000",
+        "#00ff5d",
+        "#05a640"
+      ]
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.0.2",
+    "siteFonts": [
+      {
+        "css": "'Jost', sans-serif",
+        "name": "Jost",
+        "url": "https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i"
+      },
+      {
+        "css": "'Noto Serif JP', serif",
+        "name": "Noto Serif JP",
+        "url": "https://fonts.googleapis.com/css?family=Noto+Serif+JP:200,300,400,500,600,700,800,900"
+      }
+    ],
+    "uniqCompNum": 45,
+    "versionPublish": "5.4.0",
+    "imageResize": true,
+    "screenshot": "screenshot.png",
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\n",
+    "favicon": "@PROJECT_PATH@/assets/images/56-128x61.png",
+    "mbrsiteDomain": "zarv5w1r6m",
+    "sitemapSwitcher": false,
+    "sitemapSwitcherAuto": "on",
+    "siteUrl": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "witsec-white-label": true,
+    "language": "ru",
+    "publishChangesOnly": true,
+    "global_after_body": "<style>\n  /* Общий стиль для всей области текста с тенью */\n  .text-with-shadow {\n    text-shadow: 1px 3px #000;\n  }\n</style><div class=\"text-with-shadow\">",
+    "google-analytics": "",
+    "global_footer_custom": "<script>\ndocument.oncontextmenu = cmenu; function cmenu() { return false; }\n</script>\n<script>\nfunction preventSelection(element){\n  var preventSelection = false;\n  function addHandler(element, event, handler){\n  if (element.attachEvent) element.attachEvent('on' + event, handler);\n  else if (element.addEventListener) element.addEventListener(event, handler, false);  }\n  function removeSelection(){\n  if (window.getSelection) { window.getSelection().removeAllRanges(); }\n  else if (document.selection && document.selection.clear)\n  document.selection.clear();\n  }\n  addHandler(element, 'mousemove', function(){ if(preventSelection) removeSelection(); });\n  addHandler(element, 'mousedown', function(event){ var event = event || window.event; var sender = event.target || event.srcElement; preventSelection = !sender.tagName.match(/INPUT|TEXTAREA/i) ;});\n  function killCtrlA(event){\n  var event = event || window.event;\n  var sender = event.target || event.srcElement;\n  if (sender.tagName.match(/INPUT|TEXTAREA/i)) return;\n  var key = event.keyCode || event.which;\n  if ((event.ctrlKey && key == 'U'.charCodeAt(0)) || (event.ctrlKey && key == 'A'.charCodeAt(0)) || (event.ctrlKey && key == 'S'.charCodeAt(0)))  // 'A'.charCodeAt(0) можно заменить на 65\n  { removeSelection();\n  if (event.preventDefault) event.preventDefault();\n  else event.returnValue = false;}}\n  addHandler(element, 'keydown', killCtrlA);\n  addHandler(element, 'keyup', killCtrlA);\n}\npreventSelection(document);\n</script>",
+    "global_header_custom": "",
+    "global_before_html": ""
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "О чем говорил в проходной Главный герой фильма..",
+        "meta_descr": "",
+        "header_custom": "<head>\n  <style>\n    img {\n      transition: transform 1.5s ease;\n    }\n\n    img:hover {\n      transform: scale(1.4);\n    }\n  </style>\n</head>",
+        "footer_custom": "<style>\n  /* Общий стиль для всей области текста с тенью */\n  .text-with-shadow {\n    text-shadow: 1px 1px 3px #000000;\n  }\n</style><div class=\"text-with-shadow\">",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "background-color": "@bgColor",
+            ".line": {
+              "background-color": "@lineColor",
+              "align": "center",
+              "height": "2px",
+              "margin": "0 auto"
+            },
+            ".mbr-text": {
+              "color": "#d50000"
+            }
+          },
+          "_name": "content6",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"content6\" group=\"Content\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"1\">\n        <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" value=\"12\" step=\"1\">\n        \n        <input type=\"color\" name=\"lineColor\" title=\"Color\" value=\"#e43f3f\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-md-12 col-lg-{{textWidth}}\">\n                <hr class=\"line\">\n                <p class=\"mbr-text align-center mbr-fonts-style my-4\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-text\"><b>О чем говорил в проходной Главный герой фильма..</b><br></p>\n                <hr class=\"line\">\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "uY6KY1TXZb",
+          "_anchor": "content6-k",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": [],
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "background-color": "@bgColor",
+            ".mbr-text": {
+              "text-align": "center",
+              "color": "#05a640"
+            }
+          },
+          "_name": "content5",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5\" class=\"content5\" group=\"Content\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"2\">\n        <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" value=\"12\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-md-12 col-lg-{{textWidth}}\">\n                <h3 class=\"mbr-section-title mbr-fonts-style mb-4\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\">\n                    <b>Article Title</b>\n                </h3>\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                    Enter your subtitle here\n                </h4>\n                <p class=\"mbr-text mbr-fonts-style\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-7\"><b><i>Вот если он в детстве</i></b>..</p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "uYt418ayLT",
+          "_anchor": "content5-10",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "background-color": "@bgColor"
+          },
+          "_name": "content11",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5\" class=\"content11\" group=\"Content\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"3\">\n        <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" value=\"12\" step=\"1\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-md-12 col-lg-{{textWidth}}\">\n               <p class=\"buttond_54FF\" style=\"text-align: center;\">\n  <a href=\"index.html#video3-17\" onclick=\"this.href='index.html#video3-17'\" title>\n    <span style=\"font-family: Georgia, Times New Roman, serif; cursor: pointer; style=color: #ffffcc;\">Смотреть VIDEO 📽</span></a>\n</p>\n\n<style>\n  .buttond_54FF a{\n  display: inline-block;\n  text-decoration: none;\n  text-shadow: black 1px 4px 3px;\n  box-shadow: 0px 20px 30px #696969;\n  background-color: #346700;\n  color: #fff2cc;\n  border: 9px solid #fff2cc;\n  border-radius: 60px;\n  font-size: 43px;\n  padding: 7px 42px;\n  -webkit-transition: all .3s linear;\n  -moz-transition: all .3s linear;\n  transition: all 1.4s ease;\n  }\n\n  .buttond_54FF :hover{\n  display: inline-block;\n  color:#004eff;\n\n  }\n\n  .buttond_54FF a:hover{\n  text-decoration: none;\n  background-color: #fff2cc;\n  color: #ff0000;\n  text-shadow: black 1px -2px 1px;\n  border-color: #008000;\n  transition: all 1.4s ease;\n  }\n</style>\n            </div>\n        </div>\n    </div>\n    \n</section>",
+          "_JSplaceholders": [],
+          "_PHPplaceholders": [],
+          "_anchor": "content11-18",
+          "_isUserblock": true,
+          "_cid": "uYJBYqLFjL",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "@media (max-width: 991px)": {
+              ".image-wrapper": {
+                "margin-bottom": "1rem"
+              }
+            },
+            ".row": {
+              "flex-direction": "row-reverse"
+            },
+            "img": {
+              "width": "100%"
+            }
+          },
+          "_name": "image3",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image3\" group=\"Images & Videos\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n        <input type=\"range\" name=\"textWidth\" title=\"Image\" min=\"4\" max=\"12\" step=\"1\" value=\"12\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background5.jpeg\">\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#22a5e5\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"1\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-12 col-lg-{{textWidth}}\">\n                <div class=\"image-wrapper\"><br><br><br>\n                    <img src=\"@PROJECT_PATH@/assets/images/56-1755x835.jpeg\" alt style=\"width: 70%; height: auto; margin:0 auto;  background-color: transparent; border: 0px solid rgb(255, 600, 0); font-size: 1%; padding: 12px 12px 12px 12px; display: block; text-align: center;\"><br><br><br>\n                    <p class=\"mbr-description mbr-fonts-style mt-2 align-center\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".mbr-description\">\n                        Image Description</p>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "uY6L8Sfgld",
+          "_anchor": "image3-l",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": [],
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "background": "@bgColor",
+            "& when (@fullWidth = false)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            "& when (@gradientBg)": {
+              "background": "linear-gradient(0deg, @bgColor, @color2)"
+            },
+            ".video-block": {
+              "margin": "auto",
+              "& when (@fullWidth)": {
+                "width": "100% !important"
+              }
+            },
+            "@media (max-width: 768px)": {
+              ".video-block": {
+                "width": "100% !important"
+              }
+            }
+          },
+          "_name": "video3",
+          "_sourceTheme": "mobirise4",
+          "_customHTML": "<section data-bs-version=\"5\" group=\"Images & Videos\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" value=\"3\" step=\"1\" condition=\"fullWidth==false\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" value=\"0\" step=\"1\" condition=\"fullWidth==false\">\n    <input type=\"range\" inline title=\"Width\" name=\"videoSize\" min=\"20\" max=\"100\" value=\"20\" step=\"1\" condition=\"fullWidth==false\">\n\n    <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#149dcc\" condition=\"fullWidth==false\">\n    <input type=\"checkbox\" title=\"Gradient\" name=\"gradientBg\" checked condition=\"fullWidth==false\">\n    <input type=\"color\" title=\"Color 2\" name=\"color2\" value=\"#ffffff\" condition=\"gradientBg\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n<br><br>\n    <div style=\"margin: 20px; display: flex; align-items: center; justify-content: center;\">\n  <div style=\"border: 3px solid rgb(0,100,0); padding: 0px 0px 0px 0px;\n    width: 360px;\n    height: 620px;\n    box-sizing: border-box;\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\">\n    \n    <!-- Внутренний блок с отступом -->\n    <div style=\"padding: 10px; /* здесь регулируешь отступ между рамкой и видео */\n      width: 100%;\n      height: 100%;\n      box-sizing: border-box;\">\n      \n      <!-- iframe занимает всю внутреннюю область -->\n      <iframe allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen frameborder=\"0\" src=\"https://dzen.ru/embed/o-FsavRoJAAA?from_block=partner&from=zen&mute=0&autoplay=0&tv=1\" style=\"width: 100%; height: 100%; display: block;\">\n      </iframe>\n    </div>\n  </div>\n</div>\n<style>\n.center-video {\n  display: flex;\n  justify-content: center;\n  /* Можно добавить margin-top или margin-bottom, если нужно чуть отступа */\n}\n</style>  \n            \n        \n    \n</section>",
+          "_JSplaceholders": [],
+          "_PHPplaceholders": [],
+          "_anchor": "video3-17",
+          "_isUserblock": true,
+          "_cid": "uYJzA0RDrk",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_name": "social-buttons3",
+          "_sourceTheme": "mobirise4",
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".socicon-bg-facebook": {
+              "background": "#3e5b98",
+              "color": "contrast(#3e5b98)"
+            },
+            ".socicon-bg-twitter": {
+              "background": "#4da7de",
+              "color": "contrast(#4da7de)"
+            },
+            ".socicon-bg-googleplus": {
+              "background": "#dd4b39",
+              "color": "contrast(#dd4b39)"
+            },
+            ".socicon-bg-vkontakte": {
+              "background": "#5a7fa6",
+              "color": "contrast(#5a7fa6)"
+            },
+            ".socicon-bg-odnoklassniki": {
+              "background": "#f48420",
+              "color": "contrast(#f48420)"
+            },
+            ".socicon-bg-pinterest": {
+              "background": "#c92619",
+              "color": "contrast(#c92619)"
+            },
+            ".socicon-bg-mail": {
+              "background": "#134785",
+              "color": "contrast(#134785)"
+            },
+            ".btn-social": {
+              "font-size": "20px",
+              "border-radius": "50%",
+              "padding": "0",
+              "width": "44px",
+              "height": "44px",
+              "line-height": "44px",
+              "text-align": "center",
+              "position": "relative",
+              "cursor": "pointer",
+              "i": {
+                "top": "0",
+                "line-height": "44px",
+                "width": "44px"
+              },
+              "& + .btn": {
+                "margin-left": ".1rem"
+              },
+              "border": "none !important"
+            },
+            "& when (@squareIcons)": {
+              ".btn-social": {
+                "border-radius": "0 !important"
+              }
+            },
+            "[class^=\"socicon-\"]:before, [class*=\" socicon-\"]:before": {
+              "line-height": "44px"
+            },
+            "@media (max-width: 767px)": {
+              ".btn": {
+                "font-size": "20px !important"
+              }
+            },
+            ".mbr-section-title": {
+              "color": "#e43f3f"
+            }
+          },
+          "_customHTML": "<section data-bs-version=\"5.1\" group=\"Social\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" plugins=\"SocialLikes,Socicon\">\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input inline type=\"range\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"3\">\n        <input inline type=\"range\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Square Icons\" name=\"squareIcons\" checked>\n        <header>It will share the current page</header>\n        <input type=\"checkbox\" title=\"Facebook\" name=\"facebook\">\n        <input type=\"checkbox\" title=\"Twitter\" name=\"twitter\">\n        <input type=\"checkbox\" title=\"Vkontakte\" name=\"vkontakte\" checked>\n        <input type=\"checkbox\" title=\"Odnoklassniki\" name=\"odnoklassniki\" checked>\n        <input type=\"checkbox\" title=\"Pinterest\" name=\"pinterest\" checked>\n        <input type=\"checkbox\" title=\"Mailru\" name=\"mailru\" checked>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/background4.jpg\" parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#efefef\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.9\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"col-md-8 align-center\">\n</div></div></div>&nbsp;\n<div style=\"width: 800px; margin: 0 auto; text-align: center;\">\n  <h1 style=\"text-align: center;\">\n    <b>\n      <span style=\"font-family: Merriweather;\">\n        <span style=\"color: red;\">☑</span>&nbsp;\n        <span style=\"color: red;\">On</span>\n        <span style=\"color: #01ffff;\">лайн радио</span>\n      </span>\n    </b>\n  </h1>\n  <div id=\"radiobells_container\">\n    <a href=\"https://www.radiobells.com/\" rel=\"nofollow\" id=\"RP_link\">Онлайн радио</a> #radiobells_script_hash\n  </div>\n  <link href=\"https://www.radiobells.com/script/style.css\" type=\"text/css\" rel=\"stylesheet\">\n  [JS_CODE_0]\n  [JS_CODE_1]\n</div><br><br>\n<style>\n  /* Общий стиль для всей области текста с тенью */\n  .text-with-shadow {\n    text-shadow: 0px 1px #000;\n  }\n</style>\n<div class=\"text-with-shadow\">\n<h1 style=\"text-align: center;\">\n<span style=\"color: red; font-family: Playfair Display; font-size: large;\">\n<center>\n</center></span></h1>\n<div style=\"text-align: center;\">\n<span style=\"color: red; font-family: Playfair Display; font-size: large;\"><b>\n<div style=\"width:300px;height:300px;margin:0 auto\">\n[JS_CODE_2]\n<div class=\"ya-share2\" data-curtain data-size=\"l\" data-shape=\"round\" data-services=\"vkontakte,odnoklassniki,telegram,moimir,blogger\">\n</div>\n</div></b></span></div></div>\n<center>\n[JS_CODE_3]\n[JS_CODE_4]\n<div data-count-clicks=\"true\" data-icon-style=\"0\" data-text-size=\"10\" data-pid=\"2047023\" data-icon-size=\"30\" data-background-color=\"#ffffff\" data-icon-color=\"ff0101\" data-text-color=\"000000\" data-like-layout=\"ic\" class=\"uptolike-rating\"></div></center>\n</section>",
+          "_JSplaceholders": [
+            "<script type=\"text/javascript\">\n    var rad_backcolor=\"#006100\"; \n    var rad_logo = \"black\"; \n    var rad_autoplay = false; \n    var rad_width = \"responsive\"; \n    var rad_width_px = 330;\n    var rad_stations = [\n      ['https://retroclub.hostingradio.ru/retroclub224.aacp','Радио Ретро','retroclub'],\n      ['https://evcast.mediacp.eu:2075/stream','Р-Сов.эстрада','sovetestrada'],\n      ['https://listen7.myradio24.com/alexx333','Ностальжи','nostalgie'],\n      ['https://lk.castnow.ru:8100/80_ru_en-192.mp3','Восьмидесятые','vosmidesjatie'],\n      ['https://listen1.myradio24.com/6262','Спокойное радио','spokoinoe'],\n      ['https://retro.amgradio.ru/Retro','Ретро Хит','retrohit'],\n      ['https://pub0101.101.ru/stream/air/aac/64/100','Авторадио','avtoradio'],\n      ['https://hr.amgradio.ru/Horoshee','Хорошее радио','horoshee'],\n      ['https://icecast-zvezda.mediacdn.ru/radio/zvezda/zvezda_128','Радио Звезда','zvezda'],\n      ['https://icecast-vgtrk.cdnvideo.ru/mayakfm_mp3_128kbps','Радио Маяк','mayak'],\n      ['https://www.liveradio.es/http://online.melodiafm.ua/MelodiaFM_Romantic_HD','Мелодия FM: Romantic','melodiafmromantic'],\n      ['https://nashe1.hostingradio.ru/nashe-256','Наше радио','nashe'],\n      ['https://rusradio.hostingradio.ru/rusradio96.aacp','Русское радио','russradio'],\n      ['https://listen.rusongs.ru/ru-mp3-128','Русские песни','russong'],\n      ['https://listen2.myradio24.com/4156','Радио странствий','radiostranstviy'],\n      ['https://www.liveradio.es/http://online.hitfm.ua/HitFM_HD','Хiт FM','hitfmua'],\n      ['https://bookradio.hostingradio.ru:8069/fm','Радио Книга','radiokniga'],\n      ['https://pub0302.101.ru:8443/stream/air/aac/64/202','Comedy Radio','comediradio'],\n      ['https://rock.amgradio.ru/RusRock','Русский Рок','makradiorusrock'],\n      ['https://radiomv.hostingradio.ru:80/radiomv256.mp3','Милицейская волна','milvolna'],\n      ['https://kpradio.hostingradio.ru:8000/64?radiostatistica=radiokp.ru','Комсомольская правда','kp'],\n      ['https://link2.rbtrack.ru/http://185.52.127.132/fr/30601/aac_64.mp3?awparams=companionAds%3Atrue;playerid:&origine=playernostalgie','France Rétro','nostalgiefrance'],\n      ['https://zaycevfm.cdnvideo.ru/ZaycevFM_pop_256.mp3','Зайцев FM: Поп-музыка','zaycevpop']\n    ];\n  </script>",
+            "<script type=\"text/javascript\" src=\"https://www.radiobells.com/script/v2_1.js\" charset=\"UTF-8\"></script>",
+            "<script src=\"https://yastatic.net/share2/share.js\"></script>",
+            "<script async=\"async\" src=\"https://w.uptolike.com/widgets/v1/zp.js?pid=2047024\" type=\"text/javascript\"></script>",
+            "<script type=\"text/javascript\">(function(w,doc) {\n    if (!w.__utlWdgt ) {\n        w.__utlWdgt = true;\n        var d = doc, s = d.createElement('script'), g = 'getElementsByTagName';\n        s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;\n        s.src = ('https:' == w.location.protocol ? 'https' : 'http')  + '://w.uptolike.com/widgets/v1/uptolike.js';\n        var h=d[g]('body')[0];\n        h.appendChild(s);\n    }})(window,document);\n</script>"
+          ],
+          "_PHPplaceholders": [],
+          "_anchor": "social-buttons3-m",
+          "_isUserblock": true,
+          "_cid": "uY6LhiwGQo",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "overflow": "hidden"
+          },
+          "_name": "footer7-uY6LlCJBOC",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"footer7\" group=\"Footers\" global once=\"footers\" mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"1\">\n        <input type=\"checkbox\" title=\"Reveal effect\" name=\"reveal\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background5.jpeg\" selected>\n            <input type=\"color\" title=\"Color\" value=\"#232323\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row align-center mbr-white\">\n            <div class=\"col-12\">\n                <p class=\"mbr-text mb-0 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".media-container-row .mbr-text\" data-app-placeholder=\"Type Text\">\n                    © Copyright 2025 All Rights Reserved\n                </p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "uY6LlCJBOC",
+          "_anchor": "footer7-n",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": [],
+          "_protectedParams": [],
+          "_global": true,
+          "_once": "footers",
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
